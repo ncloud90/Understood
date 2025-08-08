@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understood</title>
+    <style>
+        /* Basic styling for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container to center content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-bottom: 2px solid #ccc;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #333;
+        }
+        header p {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Section styling for posts and comments */
+        .post-section {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Individual confession card styling */
+        .confession-card {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fafafa;
+        }
+        .confession-card h2 {
+            margin-top: 0;
+            color: #555;
+        }
+
+        /* Styling for the comment and badge sections */
+        .comments-section {
+            border-top: 1px solid #eee;
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+        .comment-badge {
+            display: inline-block;
+            background-color: #007bff; /* Example badge color */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+
+        /* Contact form styling */
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            color: #888;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Understood</h1>
+        <p>Your story matters. Find connection here.</p>
+    </header>
+
+    <div class="container">
+        <!-- Placeholder for posting new confessions -->
+        <div class="post-section">
+            <h2 style="text-align: center;">Share Your Story</h2>
+            <p style="text-align: center; color: #666;">(This section will be a functional form later.)</p>
+        </div>
+
+        <!-- Section for existing confessions -->
+        <div class="post-section">
+            <h2>Recent Confessions</h2>
+            <div class="confession-card">
+                <h3>I felt like an outsider for years...</h3>
+                <p>This is a sample of a long story. It would detail a personal struggle and the feeling of isolation. The goal is to share a vulnerable experience and connect with others who may have felt the same way.</p>
+                <div class="comments-section">
+                    <h4>Comments</h4>
+                    <div class="comment">
+                        <span class="comment-badge" style="background-color: #007bff;">Relate</span>
+                        <p>I totally get this. I felt the same way in high school and it was so hard. Thanks for sharing.</p>
+                    </div>
+                    <div class="comment">
+                        <span class="comment-badge" style="background-color: #28a745;">Sympathy</span>
+                        <p>I could totally see how that would be distressing. Hope you found your people.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- More confessions would go here -->
+        </div>
+
+        <!-- Contact Us section for the business owner -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Have a question or feedback? We'd love to hear from you.</p>
+            <p style="color: #d9534f; font-weight: bold;">(Note: This is a placeholder. A real-world version would require a backend to forward emails.)</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Understood. All rights reserved.
+    </footer>
+
+</body>
+</html>
